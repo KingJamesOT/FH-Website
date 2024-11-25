@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/moi3opq.css">
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father's House Church</title>
+</head>
+<body>
+    
+<nav class="navbar">
+        <div class="logo">FATHER'S HOUSE <br><span class="light">CHURCH</span></div>
+        <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="locations.html">LOCATIONS</a></li>
+            <li><a href="getinvolved.html">TAKE ACTION</a></li>
+            <li><a href="giving.html">GIVING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <!-- Hamburger menu (visible on mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+    </nav>
+    <div class="parallax">
+        <div class="hero-text">
+            <h1>CONTACT</h1>
+            <p>GET IN TOUCH WITH US</p>
+        </div>
+    </div>
+
+
+<div class="form-wrapper">
+  <div class="contact-us">
+        <h1 class="form-title">Have Any Questions?</h1>
+
+    <div class="name">
+      <input type="text" name="firstName" placeholder="FIRST NAME">
+      <input type="text" name="lastName" placeholder="LAST NAME">
+    </div>
+
+    <div class="message">
+      <input type="email" name="email" placeholder="EMAIL">
+      <input type="text" name="subject" placeholder="SUBJECT">
+      <textarea name="message" placeholder="MESSAGE"></textarea>
+    </div>
+
+    <button type="submit" class="submit">SUBMIT</button>
+  </div>
+</div>
+
+<footer class="footer">
+
+    <div class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Sign up for our latest newsletters</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="YOUR EMAIL" class="email-input">
+            <button class="signup-btn">SIGN UP</button>
+        </div>
+        <div class="privacy">We respect your privacy</div>
+    </div>
+
+    <hr class="divider"> <!-- Line divider -->
+
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <!-- Add your social media icons here -->
+            <a href="https://www.facebook.com/fathershousesa/" class="social-icon">FACEBOOK</a>
+            <a href="https://www.instagram.com/fathershousesa/" class="social-icon">INSTGRAM</a>
+            <a href="https://www.youtube.com/channel/UCgeK-jWDNtvcMuD6eBkKG0A" class="social-icon">TIK-TOK</a>
+            <a href="#" class="social-icon">YOUTUBE</a>
+        </div>
+    </div>
+
+    <p class="footer-text">© Father's House Church | EST. 2011</p>
+</footer>
+
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.links');
+            menu.classList.toggle('active');
+        }
+
+        // Get the navbar element
+const navbar = document.querySelector('.navbar');
+
+    // Listen for scroll events on the window
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 75) { // If scrolled more than 50px
+            navbar.classList.add('scrolled'); // Add 'scrolled' class to navbar
+        } else {
+            navbar.classList.remove('scrolled'); // Remove 'scrolled' class if less than 50px
+        }
+    });
+
+
+    
+    </script>
+
+</body>
+</html>

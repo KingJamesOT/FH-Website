@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parallax {
+    /* Background image */
+    background-image: url('image1.jpg');
+
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Height of the parallax section */
+    height: 70vh;
+    position: relative; /* Ensures the hero text is positioned relative to this section */
+}
+
+/* Hero text */
+.hero-text {
+    position: absolute;
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Fine-tune centering */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text */
+    z-index: 1; /* Ensure text is on top */
+    padding: 0 20px; /* Padding for better text spacing */
+}
+
+/* Hero text heading */
+.hero-text h1 {
+    font-size: 50px; /* Adjust font size for the main heading */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
+}
+
+/* Hero text subheading */
+.hero-text p {
+    font-size: 30px; /* Adjust font size for subheading */
+    font-weight: 300;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Adds shadow for better contrast */
+}
+
+.missioniv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+.mission {
+
+    max-width: 1100px;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 300;
+    width: 100%;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+}
+
+
+
+.logo {
+    padding-left: 30PX;
+    font-weight: 600;
+    font-size: 30px;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    padding-top: 20px;
+}
+
+.links a {
+    position: relative; /* Required for the pseudo-element */
+    font-size: 16px;
+    transition: all 300ms ease;
+            margin-right: 40px;
+    text-decoration: none;
+    color: #e2e2e2;
+    transition: all 300ms;
+}
+
+/* Added to create the underline from the middle */
+.links a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e2e2e2; /* Underline color */
+    bottom: -5px; /* Adjust this value to add space between the text and the underline */
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+/* When hovering, the underline expands */
+.links a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+.links li {
+    list-style: none;
+}
+
+.light {
+
+    font-weight: 100;
+
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Style for the main content section */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each content pair */
+    margin: 40px;
+}
+
+/* Style for each content pair */
+.content-item {
+    display: flex;
+    justify-content: space-between; /* Aligns image and text */
+    align-items: center;
+    gap: 20px; /* Adds space between image and text */
+    transition: all 300ms;
+    outline: #dbdbdb 1px solid;
+    border-radius: 8px;
+}
+
+.content-item img {
+    width: 45vw; /* Adjust the image size */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+.content-text {
+    width: 50%; 
+    text-align: center;
+}
+
+/* Style for the text (heading and paragraph) */
+.content-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style for the line under paragraphs */
+.line {
+    width: 25vw;            /* Set the line width to 45% of the viewport width */
+    height: 1px;            /* Adjust the height for the line */
+    background-color: #ccc; /* Light gray color for the line */
+    margin: 20px auto;      /* Add space around the line and center it horizontally */
+}
+
+.content-item:hover {
+    box-shadow: 0px 2px 10px #5a5a5a;
+    border-radius: 8px;
+    outline: #ffffff00 1px solid;
+    cursor: pointer;
+}
+
+/* Reverse the order of image and text for specific items (second pair) */
+.content-item.reverse {
+    flex-direction: row-reverse; /* Reverses the layout so image is on the left */
+}
+
+
+
+.footer {
+
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #222; /* Darker background */
+    color: white; /* White text */
+    font-family: "Montserrat", sans-serif;
+}
+
+.newsletter {
+    text-align: center;
+       padding-top: 30PX;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Even darker background for the input */
+    color: white;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: white; /* White button */
+    color: #333; /* Dark text color for the button */
+    border: 2px solid white; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #333; /* Black background on hover */
+    color: white; /* White text */
+    border: 2px solid white; /* White border remains */
+}
+
+.privacy {
+    font-size: 12px;
+    color: #bbb; /* Lighter text color for privacy notice */
+}
+
+.divider {
+    margin: 20px 0;
+    border: 1px solid #ffffff; /* Darker divider line */
+    width: 100vh;
+    align-self: center;
+}
+
+
+.social-media {
+    text-align: center;
+}
+
+.social-media h3 {
+    font-size: 24px;
+        font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 15px;
+    text-decoration: none;
+    color: white; /* White icons */
+    transition: all 300MS;
+}
+
+.social-icon:hover {
+    color: #774caf; /* Change color on hover */
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb; /* Lighter text for the footer copyright */
+}
+
+
