@@ -112,7 +112,7 @@
     left: 50%;
     transition: all 0.3s ease;
 }
-
+ 
 /* When hovering, the underline expands */
 .links a:hover::before {
     width: 100%;
