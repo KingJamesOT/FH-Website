@@ -7,6 +7,17 @@
     font-style: normal;
 }
 
+    /* Initial state: Hidden and transparent */
+    body {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    /* Final state: Fully visible */
+    body.loaded {
+      opacity: 1;
+    }
+
 .parallax {
     /* Background image */
     background-image: url('image1.jpg');
@@ -162,8 +173,33 @@ h3 {
 }
 
 .content-text {
-    width: 50%; 
+    width: 75vw; 
     text-align: center;
+}
+
+@media screen and (max-width: 1700px) {
+    
+/* Style for each content pair */
+.content-item {
+    flex-direction: column;
+    padding: 50px;
+}
+
+.content-text {
+        margin-bottom: 20px;
+
+}
+
+
+
+.content-item img {
+    width: 75vw; /* Adjust the image size */
+    height: 400px;
+}
+  
+.content-item {
+    flex-direction: column-reverse; /* Reverses the layout so image is on the left */
+}
 }
 
 /* Style for the text (heading and paragraph) */
@@ -196,6 +232,9 @@ h3 {
 .content-item.reverse {
     flex-direction: row-reverse; /* Reverses the layout so image is on the left */
 }
+
+
+
 
 
 

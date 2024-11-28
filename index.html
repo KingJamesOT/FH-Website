@@ -127,7 +127,13 @@ const navbar = document.querySelector('.navbar');
 
 
     
+
+    // Add "loaded" class to the body after the page fully loads
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
     </script>
+
 
 </body>
 </html>

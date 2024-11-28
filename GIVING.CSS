@@ -7,6 +7,17 @@
     font-style: normal;
 }
 
+    /* Initial state: Hidden and transparent */
+    body {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    /* Final state: Fully visible */
+    body.loaded {
+      opacity: 1;
+    }
+
 .parallax {
     /* Background image */
     background-image: url('image2.jpg');

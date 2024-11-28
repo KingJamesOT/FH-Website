@@ -37,14 +37,14 @@
         <h1 class="form-title">Have Any Questions?</h1>
 
     <div class="name">
-      <input type="text" name="firstName" placeholder="FIRST NAME">
+      <input type="text" name="firstName" placeholder="FIRST NAME *">
       <input type="text" name="lastName" placeholder="LAST NAME">
     </div>
 
     <div class="message">
-      <input type="email" name="email" placeholder="EMAIL">
-      <input type="text" name="subject" placeholder="SUBJECT">
-      <textarea name="message" placeholder="MESSAGE"></textarea>
+      <input type="email" name="email" placeholder="EMAIL *">
+      <input type="text" name="subject" placeholder="SUBJECT *">
+      <textarea name="message" placeholder="MESSAGE *"></textarea>
     </div>
 
     <button type="submit" class="submit">SUBMIT</button>
@@ -100,7 +100,12 @@ const navbar = document.querySelector('.navbar');
     });
 
 
-    
+
+    // Add "loaded" class to the body after the page fully loads
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+
     </script>
 
 </body>

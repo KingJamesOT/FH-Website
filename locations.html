@@ -21,21 +21,21 @@
     </nav>
 
     <div class="parallax">
-        <div class="hero-text">
+        <div class="hero-text ">
             <h1>Locations<br>& Site Pastors<br></h1>
             <p>Find Us Near You</p>
         </div>
     </div>
 
-<div class="content-section">
+<div class="content-section ">
     <!-- First Image-Description Pair -->
     <div class="content-item">
         <img src="image1.jpg" alt="Description Image 1" class="content-img">
         <div class="content-text">
             <h2>FH | Mandela Bay</h2>
             <h3>Pastor George Georgiou</h3>
-            <p style="margin: 20px;">Pastor George started out his ministry as a student at Nelson Mandela Metropolitan University <br>and a member of the AOG in 1991. He birthed a student community by starting a small group <br>in his residence which grew into a student church under Every Nation Africa.</p>
-            <p>After 12 years of fruitful ministry, Pastor George planted Father’s House Church in 2010 <br> and held its first service on Christmas Day with around 200 people attending. Since then,<br>  exponential growth has seen Father’s House boldly moving into a warehouse in North End, <br> Port Elizabeth,  now with 3000 people in Sunday attendance and over 5000 people who call <br>Father’s House home.</p>
+            <p style="margin: 20px;">Pastor George started out his ministry as a student at Nelson Mandela Metropolitan University and a member of the AOG in 1991. He birthed a student community by starting a small group in his residence which grew into a student church under Every Nation Africa.</p>
+            <p>After 12 years of fruitful ministry, Pastor George planted Father’s House Church in 2010 and held its first service on Christmas Day with around 200 people attending. Since then,  exponential growth has seen Father’s House boldly moving into a warehouse in North End,  Port Elizabeth,  now with 3000 people in Sunday attendance and over 5000 people who call Father’s House home.</p>
             <div class="line"></div> <!-- Added line under the paragraphs -->
             <p style="margin-right: 93px;"><span style="font-weight: 600;">Service Times:</span> 09h00 | 17h00</p> <!-- Added another paragraph -->
             <p><span style="font-weight: 600;">For More Info:</span> Hello@fathershousesa.org</p> <!-- Added another paragraph -->
@@ -116,6 +116,32 @@
     <p class="footer-text">© Father's House Church | EST. 2011</p>
 </footer>
 
+ <script>
+// Function to check screen width and remove "reverse" class
+// Function to check screen width and remove "reverse" class from all matching elements
+  function handleResize() {
+    const elements = document.querySelectorAll(".content-item.reverse"); // Select all elements with the class "content-item reverse"
+    elements.forEach((element) => {
+      if (window.innerWidth <= 1700) {
+        element.classList.remove("reverse");
+      } else {
+        element.classList.add("reverse"); // Optionally re-add the class if the width increases again
+      }
+    });
+  }
+
+  // Add the event listener for window resize
+  window.addEventListener("resize", handleResize);
+
+  // Run on initial load to ensure it applies immediately
+  handleResize();
+
+
+    // Add "loaded" class to the body after the page fully loads
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+    </script>
 
 
 
