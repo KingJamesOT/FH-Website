@@ -40,3 +40,23 @@ const navbar = document.querySelector('.navbar');
         }
     });
 });
+
+
+const accordionButtons = document.querySelectorAll('.accordion-button');
+
+// Add an event listener to each button
+accordionButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    // Get the associated accordion content
+    const content = this.nextElementSibling;
+
+    // Check if the content is already expanded
+    if (content.style.maxHeight) {
+      // If it's already expanded, collapse it
+      content.style.maxHeight = null;
+    } else {
+      // If it's collapsed, expand it by setting maxHeight to the scrollHeight
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});

@@ -131,7 +131,7 @@ h3 {
 
 .accordion-button:hover {
     background-color: #eee;
-}
+} 
 
 .accordion-content {
     max-height: 0; /* Initially collapsed */
