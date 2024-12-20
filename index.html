@@ -3,6 +3,9 @@
 <head>
     <link rel="stylesheet" href="https://use.typekit.net/moi3opq.css">
     
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,54 +30,31 @@
     <div class="parallax">
         <div class="hero-text">
             <h1>Welcome to <br>Father's House Church</h1>
-            <p>We Hope You Feel at Home</p>
+            <p>Service Times <br> 09h00 | 17h00</p>
         </div>
     </div>
 
-    <div class="missioniv">
+    <div class="missioniv fade-in-left">
         <img class="mission" src="mission.jpg">    
     </div>
    
+        <div class="ehtc ">
+            <div class="eht fade-in-left">
+                <h1>UPCOMING EVENTS</h1>
+                <p>Find a list of Upcoming Events here at <br>Father's House Church</p>
+            </div>    
+        </div>
 
-<div class="tiles-container">
-    <a href="locations.html">
-    <div class="tile">
-        <img src="image1.jpg" alt="Tile 1">
-        <div class="tile-text">
-            <h3>FH Mandela Bay</h3>
-            <p>30 Paterson Road, North End, ​</p>
-        </div>
-    </div>
-    </a>
-    <a href="locations.html ">
-        <div class="tile">
-        <img src="image2.jpg" alt="Tile 2">
-        <div class="tile-text">
-            <h3>FH Jbay</h3>
-            <p>Corner of Jeffrey Street and Duine Road </p>
-        </div>
-    </div>
-    </a>
-    <a href="locations.html">
-    <div class="tile">
-        <img src="image3.jpg" alt="Tile 3">
-        <div class="tile-text">
-            <h3>FH Kariega</h3>
-            <p>81 John Street, Central</p>
-        </div>
-    </div>
-    </a>
-    <a href="locations.html">
-    <div class="tile">
-        <img src="image4.jpg" alt="Tile 4">
-        <div class="tile-text">
-            <h3>FH GEORGE</h3>
-            <p>1 Groenkloof Avenue, Glenwood</p>
-        </div>
-    </div>
-    </a>
-</div>
 
+    <section class="events fade-in-up">
+            <img src="summerserve.jpg" class="eventshero">
+
+    </section>
+
+      <section class="events row-reverse fade-in-up">
+            <img src="thrillofhope.jpg" class="eventshero">
+
+    </section>
 
 
 
@@ -107,32 +87,7 @@
 </footer>
 
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.links');
-            menu.classList.toggle('active');
-        }
-
-        // Get the navbar element
-const navbar = document.querySelector('.navbar');
-
-    // Listen for scroll events on the window
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 75) { // If scrolled more than 50px
-            navbar.classList.add('scrolled'); // Add 'scrolled' class to navbar
-        } else {
-            navbar.classList.remove('scrolled'); // Remove 'scrolled' class if less than 50px
-        }
-    });
-
-
-    
-
-    // Add "loaded" class to the body after the page fully loads
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-    </script>
+    <script src="script.js"></script>
 
 
 </body>

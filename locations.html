@@ -3,6 +3,10 @@
 <head>
     <link rel="stylesheet" href="https://use.typekit.net/moi3opq.css">
     
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="locations.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,9 +31,10 @@
         </div>
     </div>
 
+
 <div class="content-section ">
     <!-- First Image-Description Pair -->
-    <div class="content-item">
+    <div class="content-item fade-in-left">
         <img src="image1.jpg" alt="Description Image 1" class="content-img">
         <div class="content-text">
             <h2>FH | Mandela Bay</h2>
@@ -43,13 +48,13 @@
     </div>
 
     <!-- Second Image-Description Pair -->
-    <div class="content-item reverse">
+    <div class="content-item reverse fade-in-right">
         <img src="image2.jpg" alt="Description Image 2" class="content-img">
         <div class="content-text">
             <h2>FH | Jeffery's Bay</h2>
             <h3>Pastor Lloyd Dillon</h3>
-            <p  style="margin: 20px;">This is the description for the second image.</p>
-            <p>Additional information for the second image.</p>
+          <p style="margin: 20px;">Pastor George started out his ministry as a student at Nelson Mandela Metropolitan University and a member of the AOG in 1991. He birthed a student community by starting a small group in his residence which grew into a student church under Every Nation Africa.</p>
+            <p>After 12 years of fruitful ministry, Pastor George planted Father’s House Church in 2010 and held its first service on Christmas Day with around 200 people attending. Since then,  exponential growth has seen Father’s House boldly moving into a warehouse in North End,  Port Elizabeth,  now with 3000 people in Sunday attendance and over 5000 people who call Father’s House home.</p>
             <div class="line"></div> <!-- Added line under the paragraphs -->
             <p style="margin-right: 163px;"><span style="font-weight: 600;">Service Time:</span> 09h00</p> <!-- Added another paragraph -->
             <p><span style="font-weight: 600;">For More Info:</span> Hello@fathershousesa.org</p> <!-- Added another paragraph -->
@@ -58,14 +63,14 @@
     </div>
 
     <!-- Third Image-Description Pair -->
-    <div class="content-item">
+    <div class="content-item fade-in-left">
         <img src="image3.jpg" alt="Description Image 3" class="content-img">
         <div class="content-text">
             <h2>FH | Kariega</h2>
             <h3>Pastor Someone</h3>
-            <p style="margin: 20px;">This is the description for the third image.</p>
-            <p>Additional information for the third image.</p>
-            <div class="line"></div> <!-- Added line under the paragraphs -->
+              <p style="margin: 20px;">Pastor George started out his ministry as a student at Nelson Mandela Metropolitan University and a member of the AOG in 1991. He birthed a student community by starting a small group in his residence which grew into a student church under Every Nation Africa.</p>
+            <p>After 12 years of fruitful ministry, Pastor George planted Father’s House Church in 2010 and held its first service on Christmas Day with around 200 people attending. Since then,  exponential growth has seen Father’s House boldly moving into a warehouse in North End,  Port Elizabeth,  now with 3000 people in Sunday attendance and over 5000 people who call Father’s House home.</p>
+             <div class="line"></div> <!-- Added line under the paragraphs -->
             <p style="margin-right: 163px;"><span style="font-weight: 600;">Service Time:</span> 09h00</p> <!-- Added another paragraph -->
             <p><span style="font-weight: 600;">For More Info:</span> Hello@fathershousesa.org</p> <!-- Added another paragraph -->
 
@@ -73,14 +78,14 @@
     </div>
 
     <!-- Fourth Image-Description Pair -->
-    <div class="content-item reverse">
+    <div class="content-item reverse fade-in-right">
         <img src="image4.jpg" alt="Description Image 4" class="content-img">
         <div class="content-text">
             <h2>FH | George</h2>
             <h3>Pastor William Colledge</h3>
-            <p style="margin: 20px;">This is the description for the fourth image.</p>
-            <p>Additional information for the fourth image.</p>
-            <div class="line"></div> <!-- Added line under the paragraphs -->
+             <p style="margin: 20px;">Pastor George started out his ministry as a student at Nelson Mandela Metropolitan University and a member of the AOG in 1991. He birthed a student community by starting a small group in his residence which grew into a student church under Every Nation Africa.</p>
+            <p>After 12 years of fruitful ministry, Pastor George planted Father’s House Church in 2010 and held its first service on Christmas Day with around 200 people attending. Since then,  exponential growth has seen Father’s House boldly moving into a warehouse in North End,  Port Elizabeth,  now with 3000 people in Sunday attendance and over 5000 people who call Father’s House home.</p>
+             <div class="line"></div> <!-- Added line under the paragraphs -->
             <p style="margin-right: 163px;"><span style="font-weight: 600;">Service Time:</span> 09h00</p> <!-- Added another paragraph -->
             <p><span style="font-weight: 600;">For More Info:</span> Hello@fathershousesa.org</p> <!-- Added another paragraph -->
         </div>
@@ -116,32 +121,9 @@
     <p class="footer-text">© Father's House Church | EST. 2011</p>
 </footer>
 
- <script>
-// Function to check screen width and remove "reverse" class
-// Function to check screen width and remove "reverse" class from all matching elements
-  function handleResize() {
-    const elements = document.querySelectorAll(".content-item.reverse"); // Select all elements with the class "content-item reverse"
-    elements.forEach((element) => {
-      if (window.innerWidth <= 1700) {
-        element.classList.remove("reverse");
-      } else {
-        element.classList.add("reverse"); // Optionally re-add the class if the width increases again
-      }
-    });
-  }
 
-  // Add the event listener for window resize
-  window.addEventListener("resize", handleResize);
+<script src="locations.js"></script>
 
-  // Run on initial load to ensure it applies immediately
-  handleResize();
-
-
-    // Add "loaded" class to the body after the page fully loads
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-    </script>
 
 
 

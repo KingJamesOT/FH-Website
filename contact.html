@@ -3,6 +3,10 @@
 <head>
     <link rel="stylesheet" href="https://use.typekit.net/moi3opq.css">
     
+ <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,14 +41,14 @@
         <h1 class="form-title">Have Any Questions?</h1>
 
     <div class="name">
-      <input type="text" name="firstName" placeholder="FIRST NAME *">
-      <input type="text" name="lastName" placeholder="LAST NAME">
+      <input type="text" name="firstName" placeholder="FIRST NAME *" class="fade-in-left">
+      <input type="text" name="lastName" placeholder="LAST NAME" class="fade-in-right">
     </div>
 
     <div class="message">
-      <input type="email" name="email" placeholder="EMAIL *">
-      <input type="text" name="subject" placeholder="SUBJECT *">
-      <textarea name="message" placeholder="MESSAGE *"></textarea>
+      <input type="email" name="email" placeholder="EMAIL *" class="fade-in-up">
+      <input type="text" name="subject" placeholder="SUBJECT *" class="fade-in-up">
+      <textarea name="message" placeholder="MESSAGE *" class="fade-in-up"></textarea>
     </div>
 
     <button type="submit" class="submit">SUBMIT</button>
@@ -81,32 +85,7 @@
 
 
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.links');
-            menu.classList.toggle('active');
-        }
-
-        // Get the navbar element
-const navbar = document.querySelector('.navbar');
-
-    // Listen for scroll events on the window
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 75) { // If scrolled more than 50px
-            navbar.classList.add('scrolled'); // Add 'scrolled' class to navbar
-        } else {
-            navbar.classList.remove('scrolled'); // Remove 'scrolled' class if less than 50px
-        }
-    });
-
-
-
-    // Add "loaded" class to the body after the page fully loads
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,178 @@
+
+.hamburger {
+    display: none; /* Hide the hamburger by default */
+    position: fixed;
+    right: 10px;
+}
+
+
+
+.navbar {
+    position: absolute;
+    top: 300;
+    width: 100%;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    transition: all 400ms;
+}
+
+
+.navbar.scrolled {
+    opacity: 0;
+}
+
+
+.logo {
+    left: 10px;
+    padding-left: 30PX;
+    font-weight: 600;
+    font-size: 30px;
+    color: #e2e2e2;
+    cursor: pointer;
+    position: fixed;
+}
+
+.links {
+    display: flex;
+    padding-top: 20px;
+    position: fixed;
+    right: 10px;
+}
+
+.links a {
+    position: relative; /* Required for the pseudo-element */
+    font-size: 16px;
+    transition: all 300ms ease;
+            margin-right: 40px;
+    text-decoration: none;
+    color: #e2e2e2;
+    transition: all 300ms;
+}
+
+/* Added to create the underline from the middle */
+.links a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e2e2e2; /* Underline color */
+    bottom: -5px; /* Adjust this value to add space between the text and the underline */
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+/* When hovering, the underline expands */
+.links a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+.links li {
+    list-style: none;
+}
+
+.light {
+
+    font-weight: 100;
+
+}
+
+@media screen and (max-width: 1000px) {
+    /* Initially hide the menu links */
+    .links {
+        display: none; 
+        flex-direction: column;
+        position: fixed; /* Use fixed to keep it centered on screen */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the menu in the middle */
+        background-color: #111111;
+        width: 250px; /* Adjust width to fit content */
+        padding: 20px;
+        z-index: 1000; /* Ensure the menu is on top */
+        text-align: center;
+        transition: opacity 0.3s ease;
+    }
+
+
+.logo {
+    padding-left: 30PX;
+    font-weight: 600;
+    font-size: 30px;
+    color: #e2e2e2;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+    /* Show the menu when 'active' class is added */
+    .links.active {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+
+    }
+
+    .links.active li {
+        margin: 20px;
+
+    }
+
+    /* Style for each link in the menu */
+    .links a {
+        margin: 15px 0; /* Add spacing between links */
+        color: #fff;
+        text-align: center; /* Center align text */
+        font-size: 18px;
+    }
+
+    /* Hamburger menu icon styles */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: #e2e2e2;
+        cursor: pointer;
+        padding-right: 20px;
+        z-index: 1010; /* Keep hamburger on top */
+    }
+
+    /* Page overlay to create solid background color effect */
+    body.active-menu {
+        background-color: rgba(0, 0, 0, 0.8); /* Solid color with opacity */
+        overflow: hidden; /* Disable scrolling */
+        transition: opacity 0.3s ease;
+    }
+}
+
+
+/* Hero text */
+.hero-text {
+    position: absolute;
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Fine-tune centering */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text */
+    z-index: 1; /* Ensure text is on top */
+    width: 75vw;
+}
+
+/* Hero text heading */
+.hero-text h1 {
+    font-size: 50px; /* Adjust font size for the main heading */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
+}
+
+/* Hero text subheading */
+.hero-text p {
+    font-size: 30px; /* Adjust font size for subheading */
+    font-weight: 300;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Adds shadow for better contrast */
+}

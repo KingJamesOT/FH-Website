@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="https://use.typekit.net/moi3opq.css" />
 
+ <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="GIVING.CSS" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -154,31 +158,7 @@
       <p class="footer-text">© Father's House Church | EST. 2011</p>
     </footer>
 
-    <script>
-      // Accordion functionality
-      // Accordion functionality
-      const buttons = document.querySelectorAll(".accordion-button");
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const content = button.nextElementSibling;
-
-          // Toggle content visibility for the clicked button only
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null; // Collapse
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px"; // Expand
-          }
-        });
-      });
-
- 
-    // Add "loaded" class to the body after the page fully loads
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-
-
+    <script src="script.js">
     </script>
   </body>
 </html>
